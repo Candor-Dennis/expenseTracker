@@ -1,0 +1,50 @@
+@font-face {
+	font-family: 'OpenSansRegular';
+	src: url('OpenSansRegular/OpenSansRegular.eot');
+	src: local('OpenSansRegular/OpenSansRegular'), url('OpenSansRegular/OpenSansRegular.woff') format('woff'), url('OpenSansRegular/OpenSansRegular.ttf') format('truetype');
+}
+/* :root{
+	font-family: 'OpenSansRegular' !important;
+}
+h1, h2, h3, h4, h5, h6, p, a, span {
+	font-family: 'OpenSansRegular' !important;
+}
+body{
+	font-family: 'OpenSansRegular' !important;
+} */
+/* .myTextBlue{
+  color: #0066CC;
+}
+.font-weight-bold{
+  font-weight: 900;
+}
+section#header{
+  background-color: #F5F5F5;
+  border-bottom: 2px solid #ccc;
+}
+section#nav, .btn-myBtn{
+  background-color: #0066CC;
+}
+ul.navbar-nav li.nav-item a.nav-link, a.navbar-brand{
+  color: #fff;
+}
+.bg-default{
+  background-color: #fff;
+}
+.btn-orange{
+  background-color: #FF9900;
+  color: #fff;
+}
+.img-holder{
+  height:150px;
+  overflow: hidden;
+}
+.navbar-toggler{
+  position: relative;
+  left: 43%;
+} */
+
+img {
+  width: 300px;
+  height: 300px;
+}
