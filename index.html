@@ -75,21 +75,25 @@
 		var balance = parseInt(document.getElementById('balance').innerHTML);
 		var purchase =document.getElementById('purchase').value;
 		var expense = parseInt(document.getElementById('expense').value);
-		if (expense == "" || isNaN(expense) || expense > money) {
+		if (expense == "" || isNaN(expense)) {
 			alert('Please enter values correctly')
 
 		}else if ( purchase == "") {
 			alert("purchase cannot be empty")
 		    
 		} else {
-		total += money;
-		balance -= expense;
-		document.getElementById('balance').innerHTML = balance;
-		var show = document.createElement('p')
-		show.innerHTML = `Expense Name : ${purchase} <br> Expense Amount : ${expense}`;
-		document.getElementById('paragraph').appendChild(show);
+			if (expense <= balance) {
+				total += money;
+				balance -= expense;
+				document.getElementById('balance').innerHTML = balance;
+				var show = document.createElement('p')
+				show.innerHTML = `Expense Name : ${purchase} <br> Expense Amount : ${expense}`;
+				document.getElementById('paragraph').appendChild(show);
 
-		    
+		 
+			}else{
+			alert("sorry your expense amount is higher than your current balance")
+			}
 		}
 				
 	}
